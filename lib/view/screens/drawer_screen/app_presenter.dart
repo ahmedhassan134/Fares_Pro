@@ -92,7 +92,7 @@ class AppPresenter extends StatelessWidget {
                                 child: SizedBox.fromSize(
                                   size: Size.fromRadius(SizeConfig.defaultSize * 7),
                                   // Image radius
-                                  child: Image.asset('assets/images/person/2.png',
+                                  child: Image.asset('assets/images/person/2.jpg',
                                       fit: BoxFit.fill),
                                 ),
                               ),

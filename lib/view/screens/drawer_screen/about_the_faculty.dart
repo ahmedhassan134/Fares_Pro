@@ -71,12 +71,20 @@ class AboutTheFaculty extends StatelessWidget {
                 ),
                ClipRRect(
                  borderRadius: BorderRadius.circular(16),
-                   child: Image.asset('assets/images/person_faculty/1.png')),
-                SizedBox(height: SizeConfig.defaultSize *1,),
-                const Center(
-                  child: Text('''ا.د/منصور حسن
-رئيس جامعة بني سويف''',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),textDirection: TextDirection.rtl,),
+                   child: Image.asset('assets/images/person_faculty/1.png')), SizedBox(
+                  height: SizeConfig.defaultSize * 1,
+                ),
 
+
+
+
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: const [
+                    Text('ا.د/منصور حسن',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    Text('رئيس جامعة بني سويف',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  ],
                 ),
                 SizedBox(height: SizeConfig.defaultSize *3,),
 

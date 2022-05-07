@@ -20,19 +20,21 @@ class IntroductionToCommunicationScienceButton extends StatelessWidget {
           decoration: BoxDecoration(
             color: clr,
             borderRadius: BorderRadius.circular(8),
-            boxShadow: const [
+            boxShadow:  [
               BoxShadow(
                   color: Colors.black26,
-                  offset: Offset(10,10),
-                  blurRadius: 10
+                  offset: Offset(SizeConfig.defaultSize*1,SizeConfig.defaultSize*1),
+                  blurRadius: SizeConfig.defaultSize*1
               )
             ],
 
 
           ),
           child: Center(
-            child: Text
-              (text,style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),),
+            child: FittedBox(
+              child: Text
+                (text,style:  TextStyle(fontSize: SizeConfig.defaultSize*2.2,fontWeight: FontWeight.bold,color: Colors.white),),
+            ),
           ),
 
 

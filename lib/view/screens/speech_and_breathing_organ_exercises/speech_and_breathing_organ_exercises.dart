@@ -1,3 +1,5 @@
+import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/breathing_excercise.dart';
+import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/speeking_excersice.dart';
 import 'package:flutter/material.dart';
 
 import '../../../service/responsive.dart';
@@ -25,13 +27,17 @@ static String id='ss';
               children: [
 
                 IntroductionToCommunicationScienceButton(
-                  onTap: (){},
+                  onTap: (){
+                    Navigator.pushNamed(context, SpeekingExcercise.id);
+                  },
                   text: 'تدريبات أعضاء النطق ',
                   clr: Colors.brown,
 
                 ),
                 IntroductionToCommunicationScienceButton(
-                  onTap: (){},
+                  onTap: (){
+                    Navigator.pushNamed(context, BreathingExcercise.id);
+                  },
                   text: 'تدريبات التنفس ',
                   clr: Colors.amber,
 
