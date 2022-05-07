@@ -6,6 +6,7 @@ class AppPresenterModel{
 
 List < AppPresenterModel>presenterList=[
   AppPresenterModel(img: 'assets/images/person/1.png', text: 'اسلام محمد شحاته'),
+  AppPresenterModel(img: 'assets/images/person/19.jpg', text: 'عصام احمد عثمان'),
   AppPresenterModel(img: 'assets/images/person/3.png', text: 'فيلوباتير عادل هرمس '),
   AppPresenterModel(img: 'assets/images/person/4.png', text: 'بيشوي رزق حنا'),
   AppPresenterModel(img: 'assets/images/person/5.png', text: 'عبدالله حسين عبدالسالم'),
@@ -22,5 +23,5 @@ List < AppPresenterModel>presenterList=[
   AppPresenterModel(img: 'assets/images/person/16.png', text: 'سارة صموئيل حليم '),
   AppPresenterModel(img: 'assets/images/person/17.png', text: 'منار عيد عبدالوهاب '),
   AppPresenterModel(img: 'assets/images/person/18.png', text: 'بوسي خلفهريدي '),
-  AppPresenterModel(img: 'assets/images/person/19.png', text: 'عصام احمد عثمان'),
+
 ];

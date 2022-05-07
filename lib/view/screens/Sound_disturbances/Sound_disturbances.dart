@@ -50,26 +50,26 @@ class SoundDisturbances extends StatelessWidget {
                 ),
                 IntroductionToCommunicationScienceButton(
                   onTap: (){},
-                  text: 'أسباب تأخر النمو اللغوي',
+                  text: 'عيوب متعلقة بالحنجرة',
                   clr: Colors.teal,
 
                 ),
                 IntroductionToCommunicationScienceButton(
                   onTap: (){},
-                  text: 'اختبارات الحواس',
+                  text: ' أسباب عضوية اخري ',
                   clr: Colors.teal,
 
                 ),
 
                 IntroductionToCommunicationScienceButton(
                   onTap: (){},
-                  text: 'السمع',
+                  text: ' الاستئصال الحنجري',
                   clr: Colors.teal,
 
                 ),
                 IntroductionToCommunicationScienceButton(
                   onTap: (){},
-                  text: 'اللغة',
+                  text: 'تأهيل مرض الاستئصال الحنجري',
                   clr: Colors.teal,
 
                 ),

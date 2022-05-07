@@ -1,5 +1,7 @@
 import 'package:fares_pro/view/screens/Introduction%20to%20communication%20science/Introduction%20to%20communication%20science.dart';
 import 'package:fares_pro/view/screens/Sound_disturbances/Sound_disturbances.dart';
+import 'package:fares_pro/view/screens/advice/advice.dart';
+import 'package:fares_pro/view/screens/common_person/common_person.dart';
 import 'package:fares_pro/view/screens/common_questions.dart';
 import 'package:fares_pro/view/screens/language_disorders/language_disorders.dart';
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/speech_and_breathing_organ_exercises.dart';
@@ -100,7 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: AnimationLimiter(
                       child: Column(
                     children: AnimationConfiguration.toStaggeredList(
-                      duration: const Duration(milliseconds: 1700),
+                      duration: const Duration(milliseconds: 1000),
                       childAnimationBuilder: (widget) => SlideAnimation(
                         horizontalOffset: 200,
                         child: FadeInAnimation(
@@ -130,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.pushNamed(
                                 context, SpeechAndPainDisorders.id);
                           },
-                          text: 'اضطرابات النطق والكالم ',
+                          text: 'اضطرابات النطق والكلام ',
                           clr1: Colors.red,
                           clr2: Colors.deepPurple,
                         ),
@@ -160,7 +162,20 @@ class _HomeScreenState extends State<HomeScreen> {
                           clr2: Colors.orange,
                         ),
                         CustomContainerHomeScreen(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context,CommonPerson.id );
+                          },
+                          text: ' الشخصيات التي كانت تعاني من التلعثم  ',
+
+                          clr2:   Colors.tealAccent,
+                          clr1:    Colors.deepPurple,
+
+                        ),
+                        CustomContainerHomeScreen(
+                          onTap: () {
+                            Navigator.pushNamed(context,Advice.id );
+
+                          },
                           text: 'الارشادات',
                           clr1: Colors.tealAccent,
                           clr2: Colors.deepPurple,
