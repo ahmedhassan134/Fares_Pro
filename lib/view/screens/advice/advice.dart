@@ -6,7 +6,7 @@ class Advice extends StatelessWidget {
 
 
   final pdfPinchController = PdfControllerPinch(
-    document: PdfDocument.openAsset('assets/pdf/advice.pdf'),
+    document: PdfDocument.openAsset('assets/pdf/advices.pdf'),
   );
 
 // Pdf view with re-render pdf texture on zoom (not loose quality on zoom)

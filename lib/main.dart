@@ -14,7 +14,24 @@ import 'package:fares_pro/view/screens/common_person/common_person.dart';
 import 'package:fares_pro/view/screens/common_questions.dart';
 import 'package:fares_pro/view/screens/drawer_screen/about_the_app.dart';
 import 'package:fares_pro/view/screens/home_screen.dart';
+import 'package:fares_pro/view/screens/language_disorders/center_language_in%20_disorders.dart';
 import 'package:fares_pro/view/screens/language_disorders/language_disorders.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/abraxia/causes.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/abraxia/home_of_abraxia.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/abraxia/intervention_methods.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/abraxia/introduction.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/abraxia/symptoms.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/abraxia/treatment.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/elaee/assessment_of_blindess.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/elaee/causes_of_blindness.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/elaee/home.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/elaee/introduction.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/elaee/problem_with_blindess.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/elaee/rehabilitation_of_blindess.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/elaee/test_of_blindess.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/elaee/types_of_blindes.dart';
+import 'package:fares_pro/view/screens/language_disorders/mechanique_product/mechanique_product.dart';
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/breathing_excercise.dart';
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/speech_and_breathing_organ_exercises.dart';
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/speeking_excersice.dart';
@@ -60,10 +77,27 @@ class  MyApp extends StatelessWidget {
         LanguageTesting.id:(context)=>LanguageTesting(),
         DiagnosisOfDelayedLanguageGrowth.id:(context)=> const DiagnosisOfDelayedLanguageGrowth(),
         DesignAPlanToAddressDelayedLanguageGrowth.id:(context)=>const DesignAPlanToAddressDelayedLanguageGrowth(),
-        BreathingExcercise.id:(context)=>BreathingExcercise(),
-        SpeekingExcercise.id:(context)=>SpeekingExcercise(),
+        BreathingExcercise.id:(context)=>const BreathingExcercise(),
+        SpeekingExcercise.id:(context)=>const SpeekingExcercise(),
         CommonPerson.id:(context)=>const CommonPerson(),
-        Advice.id:(context)=>Advice()
+        Advice.id:(context)=>Advice(),
+        CenterLanguageInDisorders.id:(context)=>const CenterLanguageInDisorders(),
+        MechanicSpeeking.id:(context)=>const MechanicSpeeking(),
+        MechaniqueProduct.id:(context)=>const MechaniqueProduct(),
+        ElaeeHomeScreen.id:(context)=>const ElaeeHomeScreen(),
+        AssementOfBlindess.id:(context)=>const AssementOfBlindess(),
+        CausesOfBlindess.id:(context)=>const CausesOfBlindess(),
+        IntroductionOfBlindess.id:(context)=>const IntroductionOfBlindess(),
+        ProblemWithBlindess.id:(context)=>const ProblemWithBlindess(),
+        RehabilitionBlindess.id:(context)=>const RehabilitionBlindess(),
+        TestOfBlindess.id:(context)=>const TestOfBlindess(),
+        TypesOfBlindess.id:(context)=>const TypesOfBlindess(),
+        CausesOfAbraxia.id:(context)=>const CausesOfAbraxia(),
+        IntroductionOfAbraxia.id:(context)=>const IntroductionOfAbraxia(),
+    InterventionMethodOfAbraxia.id:(context)=>const InterventionMethodOfAbraxia(),
+        SymptomsOfAbraxia.id:(context)=>const SymptomsOfAbraxia(),
+        TreatmentOfAbraxia.id:(context)=>const TreatmentOfAbraxia(),
+       HomeOfAbraxia.id:(context)=>const HomeOfAbraxia()
       },
     );
   }

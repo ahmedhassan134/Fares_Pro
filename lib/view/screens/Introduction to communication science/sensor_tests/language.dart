@@ -6,7 +6,7 @@ class LanguageTesting extends StatelessWidget {
 
 
   final pdfPinchController = PdfControllerPinch(
-    document: PdfDocument.openAsset('assets/pdf/learning.pdf'),
+    document: PdfDocument.openAsset('assets/pdf/wording.pdf'),
   );
 
 // Pdf view with re-render pdf texture on zoom (not loose quality on zoom)
@@ -16,6 +16,7 @@ class LanguageTesting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
 
       appBar: AppBar(
         title: const Text('اختبار اللغه'),

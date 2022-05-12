@@ -5,9 +5,9 @@ class FacultyPerson{
 }
 List<FacultyPerson> facultyList=[
   FacultyPerson(img: 'assets/images/person_faculty/2.png', text: '''أ.د / هبة ابو النيل
-عميد كلية علوم ذوي االحتياجات الخاصة'''),
+عميد كلية علوم ذوي الاحتياجات الخاصة'''),
 
-  FacultyPerson(img: 'assets/images/person_faculty/8.png', text: ' د/ إيمان مسعد   مشرف المشروع '),
+  FacultyPerson(img: 'assets/images/person_faculty/8.png', text: ' د/ إيمان مسعد    '),
 
 
 

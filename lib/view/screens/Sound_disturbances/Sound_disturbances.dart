@@ -4,7 +4,7 @@ import '../../../service/responsive.dart';
 import '../../widgets/introduction_to_communication_science_button.dart';
 class SoundDisturbances extends StatelessWidget {
   const SoundDisturbances({Key? key}) : super(key: key);
-  static String id='sound';
+  static String id='sounded';
 
   @override
   Widget build(BuildContext context) {

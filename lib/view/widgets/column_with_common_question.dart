@@ -14,10 +14,10 @@ class CustomCommonQuestion extends StatelessWidget {
           alignment: Alignment.topRight,
           width: double.infinity,
           height: SizeConfig.defaultSize * 8,
-          decoration: const BoxDecoration(
+          decoration:  BoxDecoration(
             borderRadius: BorderRadius.only(
-              topRight: Radius.circular(8),
-              topLeft: Radius.circular(8),
+              topRight: Radius.circular( SizeConfig.defaultSize * 1,),
+              topLeft: Radius.circular (SizeConfig.defaultSize * 1,),
             ),
             color: Colors.blueGrey,
           ),
@@ -30,9 +30,9 @@ class CustomCommonQuestion extends StatelessWidget {
               start: SizeConfig.defaultSize * 2,),
               child:  Text(
                 text1,
-                style: const TextStyle(
+                style:  TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: SizeConfig.defaultSize * 2.4,
                     fontWeight: FontWeight.bold),textDirection: TextDirection.rtl,
               ),
             ),
@@ -42,10 +42,10 @@ class CustomCommonQuestion extends StatelessWidget {
           alignment: Alignment.topRight,
           width: double.infinity,
           height: SizeConfig.defaultSize * 20,
-          decoration: const BoxDecoration(
+          decoration:  BoxDecoration(
             borderRadius: BorderRadius.only(
-              bottomRight: Radius.circular(8),
-              bottomLeft: Radius.circular(8),
+              bottomRight: Radius.circular(SizeConfig.defaultSize * 1),
+              bottomLeft: Radius.circular(SizeConfig.defaultSize * 1),
             ),
             color: Colors.deepPurpleAccent,
           ),
@@ -58,8 +58,8 @@ class CustomCommonQuestion extends StatelessWidget {
                 start: SizeConfig.defaultSize * 1,),
               child:  Text(
                 text2,
-                style: const TextStyle(
-                    fontSize: 20,
+                style:  TextStyle(
+                    fontSize: SizeConfig.defaultSize * 2.1,
                     fontWeight: FontWeight.bold,
                     color: Colors.white
                 ),

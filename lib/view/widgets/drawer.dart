@@ -26,7 +26,7 @@ class DrawerWidget extends StatelessWidget {
           ),
           SingleChildScrollView(
             child: Container(
-              padding: const EdgeInsetsDirectional.only(start: 10),
+              padding:  EdgeInsetsDirectional.only(start: SizeConfig.defaultSize * .4,end: SizeConfig.defaultSize * 1),
               alignment: Alignment.topLeft,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -34,21 +34,22 @@ class DrawerWidget extends StatelessWidget {
                   SizedBox(
                     height: SizeConfig.defaultSize * 5,
                   ),
-                  const CircleAvatar(
-                    radius: 48, // Image radius
+                  CircleAvatar(
+                    radius: SizeConfig.defaultSize * 6,
+                    backgroundImage: const AssetImage('assets/images/background.jpg'),// Image radius
                   ),
                   SizedBox(
                     height: SizeConfig.defaultSize * 1,
                   ),
-                  const Text(
+                 Text(
                     'دليلك في التخاطب',
                     style: TextStyle(
-                        fontSize: 22,
+                        fontSize: SizeConfig.defaultSize * 2.2,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   ),
                   SizedBox(
-                    height: SizeConfig.defaultSize * 5,
+                    height: SizeConfig.defaultSize *4,
                   ),
                   CustomGesterDetectorDrawer(
                       iconData: Icons.home,
