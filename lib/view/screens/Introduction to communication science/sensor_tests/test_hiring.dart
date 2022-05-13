@@ -6,7 +6,7 @@ class HiringTesting extends StatelessWidget {
 
 
   final pdfPinchController = PdfControllerPinch(
-    document: PdfDocument.openAsset('assets/pdf/hear.pdf'),
+    document: PdfDocument.openAsset('assets/pdf/hearing.pdf'),
   );
 
 // Pdf view with re-render pdf texture on zoom (not loose quality on zoom)

@@ -1,4 +1,5 @@
 import 'package:fares_pro/models/faculty_person.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../../service/responsive.dart';
@@ -90,51 +91,45 @@ class AboutTheFaculty extends StatelessWidget {
 
 
                 Expanded(
-                  child: GridView.builder(
+                  child: ListView.builder(
                     itemCount: facultyList.length,
                     // shrinkWrap: true,
                     // physics: const NeverScrollableScrollPhysics(),
 
-                    gridDelegate:  const SliverGridDelegateWithMaxCrossAxisExtent(
-                      childAspectRatio: .8,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 10,
-                      maxCrossAxisExtent: 210,
-
-                    ),
+                    // gridDelegate:  const SliverGridDelegateWithMaxCrossAxisExtent(
+                    //   childAspectRatio: .8,
+                    //   crossAxisSpacing: 10,
+                    //   mainAxisSpacing: 10,
+                    //   maxCrossAxisExtent: 210,
+                    //
+                    // ),
                     itemBuilder: (context, index) {
                       return Padding(
-                        padding:  EdgeInsets.symmetric(horizontal: SizeConfig.defaultSize * 1),
+                        padding:  EdgeInsets.symmetric(horizontal: SizeConfig.defaultSize * 1, ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
 
-                            Expanded(
-
-                              child:   ClipOval(
-                                child: SizedBox.fromSize(
-                                  size: Size.fromRadius(SizeConfig.defaultSize * 7),
-                                  // Image radius
-                                  child: Image.asset(facultyList[index].img,
-                                      fit: BoxFit.fill),
-                                ),
+                            ClipOval(
+                              child: SizedBox.fromSize(
+                                size: Size.fromRadius(SizeConfig.defaultSize * 7),
+                                // Image radius
+                                child: Image.asset(facultyList[index].img,
+                                    fit: BoxFit.fill),
                               ),
-                              flex: 3,
                             ),
                             SizedBox(
-                              height: SizeConfig.defaultSize * 1,
+                              height: SizeConfig.defaultSize * 1.2,
                             ),
 
-                            Expanded(
-                              child: Center(
-                                child: Text(
-                                  facultyList[index].text,
-                                  style: const TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.bold),
-                                  textDirection: TextDirection.rtl,
-                                ),
+                            Center(
+                              child: Text(
+                                facultyList[index].text,
+                                style: const TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center,
                               ),
-                              flex: 1,
                             ),
                           ],
                         ),

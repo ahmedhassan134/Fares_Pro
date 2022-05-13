@@ -1,13 +1,13 @@
-import 'package:fares_pro/view/pdf_screen/pdf_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:pdfx/pdfx.dart';
 
 import '../../../service/responsive.dart';
 import '../../widgets/introduction_to_communication_science_button.dart';
-
+import 'center_language_in _disorders.dart';
+import 'mechanique.dart';
+import 'mechanique_product/mechanique_product.dart';
 class LanguageDisorders extends StatelessWidget {
   const LanguageDisorders({Key? key}) : super(key: key);
-  static String id = 'language';
+static String id='language';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,41 +27,40 @@ class LanguageDisorders extends StatelessWidget {
             child: Column(
               children: [
                 IntroductionToCommunicationScienceButton(
-                  onTap: () {
-                    Navigator.push(context, MaterialPageRoute(
-                      builder: (context) {
-                        return PdfScreen(
-                          pageRange: MapEntry(28, 47),
-                          pdfControllerPinch: PdfControllerPinch(
-                            initialPage: 28,
-                            document:
-                                PdfDocument.openAsset('assets/pdf/book.pdf'),
-                          ),
-                        );
-                      },
-                    ));
+                  onTap: (){
+                    Navigator.pushNamed(context, CenterLanguageInDisorders.id);
                   },
                   text: ' مراكز اللغة في المخ',
                   clr: Colors.red,
+
                 ),
                 IntroductionToCommunicationScienceButton(
-                  onTap: () {},
+                  onTap: (){
+                    Navigator.pushNamed(context, MechanicSpeeking.id);
+                  },
                   text: 'ميكانيكية استيعاب الكلام في الدماغ',
                   clr: Colors.deepOrange,
+
                 ),
                 IntroductionToCommunicationScienceButton(
-                  onTap: () {},
+                  onTap: (){
+                    Navigator.pushNamed(context, MechaniqueProduct.id);
+                  },
                   text: 'ميكانيكية انتاج الكلام في الدماغ',
                   clr: Colors.green,
+
                 ),
-                SizedBox(
-                  height: SizeConfig.defaultSize * 1,
-                )
+
+
+                SizedBox(height: SizeConfig.defaultSize *1,)
+
+
               ],
             ),
           ),
         ],
       ),
+
     );
   }
 }

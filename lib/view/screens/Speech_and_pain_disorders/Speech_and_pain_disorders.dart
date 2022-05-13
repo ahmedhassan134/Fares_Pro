@@ -32,13 +32,13 @@ class SpeechAndPainDisorders extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
                         return PdfScreen(
-                          pageRange: MapEntry(28, 47),
-                          pdfControllerPinch: PdfControllerPinch(
-                            initialPage: 28,
-                            document:
-                                PdfDocument.openAsset('assets/pdf/book.pdf'),
-                          ),
-                        );
+                            title: ' اللدغات',
+                            pageRange: MapEntry(30, 47),
+                            pdfControllerPinch: PdfControllerPinch(
+                              initialPage: 30,
+                              document:
+                                  PdfDocument.openAsset('assets/pdfs/book.pdf'),
+                            ));
                       },
                     ));
                   },
@@ -50,13 +50,13 @@ class SpeechAndPainDisorders extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
                         return PdfScreen(
-                          pageRange: MapEntry(55, 68),
-                          pdfControllerPinch: PdfControllerPinch(
-                            initialPage: 55,
-                            document:
-                                PdfDocument.openAsset('assets/pdf/book.pdf'),
-                          ),
-                        );
+                            title: 'التلعثم',
+                            pageRange: MapEntry(55, 68),
+                            pdfControllerPinch: PdfControllerPinch(
+                              initialPage: 55,
+                              document:
+                                  PdfDocument.openAsset('assets/pdfs/book.pdf'),
+                            ));
                       },
                     ));
                   },
@@ -68,13 +68,13 @@ class SpeechAndPainDisorders extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
                         return PdfScreen(
-                          pageRange: MapEntry(48, 54),
-                          pdfControllerPinch: PdfControllerPinch(
-                            initialPage: 48,
-                            document:
-                                PdfDocument.openAsset('assets/pdf/book.pdf'),
-                          ),
-                        );
+                            title: 'الخنف',
+                            pageRange: MapEntry(48, 54),
+                            pdfControllerPinch: PdfControllerPinch(
+                              initialPage: 48,
+                              document:
+                                  PdfDocument.openAsset('assets/pdfs/book.pdf'),
+                            ));
                       },
                     ));
                   },
@@ -86,13 +86,13 @@ class SpeechAndPainDisorders extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
                         return PdfScreen(
-                          pageRange: MapEntry(69, 74),
-                          pdfControllerPinch: PdfControllerPinch(
-                            initialPage: 69,
-                            document:
-                                PdfDocument.openAsset('assets/pdf/book.pdf'),
-                          ),
-                        );
+                            title: 'الحبسة الكلامية ',
+                            pageRange: MapEntry(69, 74),
+                            pdfControllerPinch: PdfControllerPinch(
+                              initialPage: 69,
+                              document:
+                                  PdfDocument.openAsset('assets/pdfs/book.pdf'),
+                            ));
                       },
                     ));
                   },

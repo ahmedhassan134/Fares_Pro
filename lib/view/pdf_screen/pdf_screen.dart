@@ -3,9 +3,13 @@ import 'package:pdfx/pdfx.dart';
 
 class PdfScreen extends StatelessWidget {
   PdfScreen(
-      {Key? key, required this.pageRange, required this.pdfControllerPinch})
+      {Key? key,
+      required this.title,
+      required this.pageRange,
+      required this.pdfControllerPinch})
       : super(key: key);
   static String id = 'PdfScreen';
+  final String title;
   final MapEntry<int, int> pageRange;
 
   final PdfControllerPinch pdfControllerPinch;
@@ -17,7 +21,7 @@ class PdfScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('اختبار اللغه'),
+        title: Text(title),
       ),
       body: PdfViewPinch(
         onPageChanged: (page) {

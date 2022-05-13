@@ -1,9 +1,9 @@
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/breathing_excercise.dart';
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/speeking_excersice.dart';
+import 'package:fares_pro/view/widgets/stack_custom.dart';
 import 'package:flutter/material.dart';
 
 import '../../../service/responsive.dart';
-import '../../widgets/introduction_to_communication_science_button.dart';
 class SpeechAndBreathingOrganExercises extends StatelessWidget {
   const SpeechAndBreathingOrganExercises({Key? key}) : super(key: key);
 static String id='ss';
@@ -26,22 +26,17 @@ static String id='ss';
             child: Column(
               children: [
 
-                IntroductionToCommunicationScienceButton(
-                  onTap: (){
-                    Navigator.pushNamed(context, SpeekingExcercise.id);
-                  },
-                  text: 'تدريبات أعضاء النطق ',
-                  clr: Colors.brown,
 
-                ),
-                IntroductionToCommunicationScienceButton(
-                  onTap: (){
-                    Navigator.pushNamed(context, BreathingExcercise.id);
-                  },
-                  text: 'تدريبات التنفس ',
-                  clr: Colors.amber,
+                StackCustom(s1:SizeConfig.defaultSize * 3,
 
-                ),
+                    onTap: (){
+                  Navigator.pushNamed(context, SpeekingExcercise.id);
+                }, text:'تدريبات أعضاء النطق ', img: 'assets/images/speeking_excer.jpg'),
+
+
+                StackCustom(onTap: (){
+                  Navigator.pushNamed(context, BreathingExcercise.id);
+                }, text:'تدريبات التنفس ', img: 'assets/images/breathing_excer.jpg'),
 
                 SizedBox(height: SizeConfig.defaultSize *1,)
 

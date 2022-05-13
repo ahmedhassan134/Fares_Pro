@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../service/responsive.dart';
 class DesignAPlanToAddressDelayedLanguageGrowth extends StatelessWidget {
   const DesignAPlanToAddressDelayedLanguageGrowth({Key? key}) : super(key: key);
-  static String id=' DiagnosisOfDelayedLanguageGrowth';
+  static String id=' DiagnosisOfDelayedLanguageGrowthll';
 
   @override
   Widget build(BuildContext context) {
