@@ -12,9 +12,6 @@ class DiagnosisOfDelayedLanguageGrowth extends StatelessWidget {
         title: const Text('تشخيص حالات تأخر النمو اللغوي'),
       ),
       body:
-
-
-
           SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,

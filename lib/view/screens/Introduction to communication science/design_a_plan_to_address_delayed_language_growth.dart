@@ -50,9 +50,7 @@ class DesignAPlanToAddressDelayedLanguageGrowth extends StatelessWidget {
 أما بالنسبة لبنود تركيب الجملة فلكل بند من هذه البنود العابه ووسائلها المتوفرة في المكتبات المهتمة بتعليم الطفل عن طريق اللعب.
 بالنسبة لمرحلة حكاية القصة فيمكن توفير القصص من العديد من المكتبات وأخيرا فإن الاستخدام الأمثل لهذه الوسائل بغرض بلوغ الهدف المنشود موضح في نماذج لتدريبات لتنمية اللغة عند الأطفال.    
 
-
 ''',
-
                   style: TextStyle(color: Colors.blue,
                       fontSize: SizeConfig.defaultSize*2,
                       fontWeight: FontWeight.bold

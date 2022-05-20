@@ -23,28 +23,29 @@ class RichTextWidget extends StatelessWidget {
         top: SizeConfig.defaultSize * .3,
         bottom: SizeConfig.defaultSize * .2,
       ),
-      child: RichText(
-        softWrap: true,
-        textAlign: TextAlign.end,
-        text: TextSpan(
-          text: text1,
-          locale: Locale('ar', 'EG'),
-          style: TextStyle(
-            locale: Locale('ar', 'EG'),
-            color: Colors.red,
-            fontSize: SizeConfig.defaultSize * 2.4,
-            fontWeight: FontWeight.bold,
-          ),
-          children: <TextSpan>[
-            TextSpan(
-              text: text2,
-              style: TextStyle(
-                fontSize: SizeConfig.defaultSize * 2.4,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+      child: Directionality(
+        textDirection: TextDirection.rtl,
+        child: RichText(
+          softWrap: true,
+          textAlign: TextAlign.start,
+          text: TextSpan(
+            text: text1 + " ",
+            style: TextStyle(
+              color: Colors.red,
+              fontSize: SizeConfig.defaultSize * 2.4,
+              fontWeight: FontWeight.bold,
             ),
-          ],
+            children: <TextSpan>[
+              TextSpan(
+                text: '\n' + text2,
+                style: TextStyle(
+                  fontSize: SizeConfig.defaultSize * 2.4,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

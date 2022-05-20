@@ -35,13 +35,11 @@ class IntroductionToCommunicationScience extends StatelessWidget {
             child: Column(
               children: [
                 IntroductionToCommunicationScienceButton(
-
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (BuildContext context) {
                             return const Language();
                           }));
-
                   },
                   text: ' اللغة',
                   clr: Colors.blue.shade500,

@@ -1,4 +1,7 @@
+import 'package:fares_pro/service/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
+// import 'package:pdf_text/pdf_text.dart';
 import 'package:pdfx/pdfx.dart';
 
 class PdfScreen extends StatelessWidget {
@@ -11,7 +14,6 @@ class PdfScreen extends StatelessWidget {
   static String id = 'PdfScreen';
   final String title;
   final MapEntry<int, int> pageRange;
-
   final PdfControllerPinch pdfControllerPinch;
 
 // Pdf view with re-render pdf texture on zoom (not loose quality on zoom)
@@ -20,6 +22,21 @@ class PdfScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          // pdfDoc.then((value) {
+          //   FlutterTts().speak(value
+          //       .pageAt(pdfControllerPinch.pageListenable.value)
+          //       .text
+          //       .toString());
+          // });
+          await PdfReaderHelper.getExtractor().then((value) {
+            print(value.length);
+            FlutterTts().speak(value);
+          });
+        },
+        child: Icon(Icons.play_arrow),
+      ),
       appBar: AppBar(
         title: Text(title),
       ),
