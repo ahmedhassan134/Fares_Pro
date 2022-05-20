@@ -36,6 +36,8 @@ import 'package:fares_pro/view/screens/language_disorders/mechanique_product/mec
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/breathing_excercise.dart';
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/speech_and_breathing_organ_exercises.dart';
 import 'package:fares_pro/view/screens/speech_and_breathing_organ_exercises/speeking_excersice.dart';
+import 'package:fares_pro/view/widgets/domain.dart';
+import 'package:fares_pro/view/widgets/subdomain.dart';
 import 'package:flutter/material.dart';
 
 void main() {
